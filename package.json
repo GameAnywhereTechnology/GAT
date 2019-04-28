@@ -1,0 +1,38 @@
+{
+  "name": "gat",
+  "version": "0.0.0",
+  "description": "test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GameAnywhereTechnology/gat"
+  },
+  "scripts": {
+    "git:commit": "./node_modules/.bin/git-cz",
+    "lerna:create": "./node_modules/.bin/lerna create",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jajav33 <to.jajav33@gmail.com>",
+  "license": "UNLICENSED",
+  "czConfig": {
+    "path": "node_modules/cz-lerna-changelog"
+  },
+  "devDependencies": {
+    "@types/node": "^11.10.4",
+    "chai": "^4.2.0",
+    "commitizen": "^3.0.7",
+    "cz-lerna-changelog": "^2.0.2",
+    "ghooks": "^2.0.4",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "lerna": "^3.13.1",
+    "lerna-semantic-release": "^9.1.0",
+    "mocha": "^6.0.2",
+    "rimraf": "^2.6.3",
+    "semantic-release-cli": "^4.1.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "npm": "^6.8.0"
+  }
+}
