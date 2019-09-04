@@ -15,7 +15,6 @@ class node_server {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 yield this.__createAccessPoint();
-                yield this.__scanWireless();
             }
             catch (e) {
                 return Error('No Bueno when running. Error said: ' + e);
@@ -39,6 +38,7 @@ class node_server {
                         reject(err);
                         return err;
                     }
+                    console.log('access point created');
                     resolve();
                 });
             });

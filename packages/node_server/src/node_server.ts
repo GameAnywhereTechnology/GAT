@@ -1,3 +1,4 @@
+import { StringDecoder } from "string_decoder";
 
 let wifi = require('node-wifi');
 let wirelessToolsHostApd = require('wireless-tools/hostapd');
@@ -6,7 +7,9 @@ export class node_server {
     public async run () {
         try {
             await this.__createAccessPoint();
-            await this.__scanWireless();
+            // console.log('access point created');
+            // await this.__scanWireless();
+            // console.log('scanning');
         } catch (e) {
             return Error('No Bueno when running. Error said: ' + e);
         }
@@ -30,6 +33,8 @@ export class node_server {
                     reject(err);
                     return err;
                 }
+
+                console.log('access point created');
 
                 resolve();
             });
