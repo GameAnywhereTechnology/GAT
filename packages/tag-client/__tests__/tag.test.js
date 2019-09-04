@@ -1,6 +1,6 @@
 'use strict';
 
-const tag = require('../lib/tag');
+const tag = require('..');
 
 describe('@gat/tag', () => {
     it('needs tests');
